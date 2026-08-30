@@ -7,7 +7,6 @@ class Solution {
         long low = 1;
         long high = (long) coins[0] * k;
 
-        // Find a safe upper bound
         for (int coin : coins) {
             high = Math.min(high, (long) coin * k);
         }
@@ -33,7 +32,6 @@ class Solution {
         long count = 0;
         int n = coins.length;
 
-        // Check every subset
         for (int mask = 1; mask < (1 << n); mask++) {
 
             long lcm = 1;
