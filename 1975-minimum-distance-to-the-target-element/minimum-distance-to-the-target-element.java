@@ -1,6 +1,6 @@
 class Solution {
     public int getMinDistance(int[] nums, int target, int start) {
-        int result = Integer.MAX_VALUE;
+        int result = 100000;
         int distance = 0;
         for(int i = 0; i<nums.length; i++)
         {
